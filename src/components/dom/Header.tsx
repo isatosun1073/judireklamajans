@@ -1,10 +1,12 @@
 'use client'
 
 import { useLenis } from 'lenis/react'
+import { profile } from '@/content/profile'
 
 const links = [
-  { href: '#hizmetler', label: 'Hizmetler' },
-  { href: '#isler', label: 'İşler' },
+  { href: '#hakkimda', label: 'Hakkımda' },
+  { href: '#uzmanlik', label: 'Uzmanlık' },
+  { href: '#deneyim', label: 'Deneyim' },
   { href: '#iletisim', label: 'İletişim' },
 ]
 
@@ -19,7 +21,7 @@ export default function Header() {
   return (
     <header className="header">
       <a href="#top" className="header__logo" onClick={(e) => go(e, '#top')}>
-        JUDI<span>®</span>
+        {profile.firstName} {profile.lastName}
       </a>
       <nav className="header__nav">
         {links.map((l) => (

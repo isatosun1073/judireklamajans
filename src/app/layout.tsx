@@ -8,8 +8,15 @@ import PointerTracker from '@/components/dom/PointerTracker'
 import Header from '@/components/dom/Header'
 
 export const metadata: Metadata = {
-  title: 'Judi Reklam Ajansı — CGI & 3D Kreatif Stüdyo',
-  description: 'Markaları CGI, 3D ve interaktif dijital deneyimlerle hayata geçiren kreatif reklam ajansı.',
+  title: 'İsa Tosun — Görsel İletişim Tasarım Uzmanı',
+  description:
+    'İsa Tosun: Görsel İletişim Tasarım Uzmanı, Reklam ve Dijital Medya Uzmanı, Noah Reklam Ajansı Kurucusu. Kurumsal kimlik, marka iletişimi, sosyal medya ve dijital reklam.',
+  openGraph: {
+    title: 'İsa Tosun — Portfolyo',
+    description: 'Görsel İletişim Tasarım Uzmanı · Reklam ve Dijital Medya Uzmanı · Noah Reklam Ajansı Kurucusu',
+    locale: 'tr_TR',
+    type: 'website',
+  },
 }
 
 export const viewport: Viewport = {

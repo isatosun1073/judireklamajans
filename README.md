@@ -1,6 +1,17 @@
-# Judi Reklam Ajansı — CGI / 3D Web Sitesi
+# İsa Tosun — Portfolyo
 
-Awwwards tarzı profesyonel CGI/3D site iskeleti. Beşli stack:
+Görsel İletişim Tasarım Uzmanı · Reklam ve Dijital Medya Uzmanı · Noah Reklam Ajansı Kurucusu.
+
+## İçeriği düzenleme
+
+Sitedeki **tüm metinler** `src/content/profile.ts` dosyasında: unvanlar, hakkımda, eğitim, deneyim,
+uzmanlık alanları, yaklaşım ve kariyer hedefi. İletişim bölümündeki bağlantılar da buradaki
+`contact` alanından gelir (e-posta, telefon, LinkedIn, Instagram, Behance, web). Boş bırakılan
+alanlar sitede görünmez.
+
+## Teknoloji
+
+Awwwards tarzı CGI/3D altyapı. Beşli stack:
 
 | Paket | Görev |
 |---|---|
@@ -34,11 +45,12 @@ src/
 │  │  ├─ Hero3D.tsx                # Sıvı metal küre + cam uydular
 │  │  └─ Lights.tsx                # HDR indirmeden Lightformer stüdyo ışığı
 │  └─ dom/
-│     ├─ Sections.tsx              # Hero, Hizmetler, İşler (pinned), İletişim + GSAP
+│     ├─ Sections.tsx              # Hero, Hakkımda, Uzmanlık, Deneyim (pinned), Eğitim, Yaklaşım, İletişim
 │     ├─ Preloader.tsx             # useProgress sayacı + perde animasyonu
 │     ├─ PointerTracker.tsx        # İmleç → 3D, özel imleç
 │     ├─ Header.tsx                # Lenis scrollTo ile anchor navigasyonu
 │     └─ CanvasLoader.tsx
+├─ content/profile.ts              # Tüm site içeriği
 └─ lib/scroll.ts                   # DOM ↔ WebGL paylaşımlı mutable state
 ```
 

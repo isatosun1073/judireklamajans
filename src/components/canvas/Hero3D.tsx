@@ -82,7 +82,7 @@ export function Satellites() {
             {it.kind === 'sphere' && (
               <mesh>
                 <sphereGeometry args={[1, 48, 48]} />
-                <meshStandardMaterial color="#ff4d2e" metalness={0.4} roughness={0.2} />
+                <meshStandardMaterial color="#d4ff3a" metalness={0.3} roughness={0.25} />
               </mesh>
             )}
           </group>
